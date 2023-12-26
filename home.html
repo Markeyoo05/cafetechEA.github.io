@@ -1,0 +1,189 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>CafeTech</title>
+    <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+    <style> 
+        .boxHome {
+            width: 50%; 
+            background-color: rgba(123, 124, 122, 0.5);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left:30px ; 
+            color: #ffffffe0;
+            padding: 25px; 
+            text-align: justify;
+            font-size: 18px;
+            box-shadow: 0 0 10px rgba(247, 242, 242, 1);
+            letter-spacing: 2px; 
+        }
+        /* Log in  form start here*/ 
+        #login-form {
+            width: 300px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the form horizontally */
+            float: right; /* Float the form to the right */
+            margin-top: 30px; /* Add some top margin for spacing */
+            background-color: rgba(123, 124, 122, 0.5); /* Background color similar to the box */
+            padding: 15px; /* Padding for the form content */
+            box-shadow: 0 0 10px rgba(247, 242, 242, 1); /* Box shadow similar to the box */
+            border-radius: 10px; /* Border radius for rounded corners */
+            margin-right: 20px;
+            
+        }
+
+        #login-form h2 {
+            text-align: center; /* Center the heading within the form */
+            color: #ffffff; /* Text color */
+        }
+
+        #login-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffff; /* Text color */
+        }
+
+        #login-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #login-form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .signuplink a{
+            color: #fffdfd;
+            text-decoration: none;
+        }
+        .signuplink a:hover{
+            color: #b1b1b1;
+        }
+        #userinfo .smiley {
+            font-size: 20px; /* Adjust the size as needed */
+        }
+        #userinfo {
+        position: fixed;
+        left: 280px;
+        }
+    </style>
+      <script src="path/to/script.js"></script>
+</head>
+<body> 
+    
+    <div class="background">
+        <video id="video-background" autoplay loop muted>
+            <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      
+     <div class="content">
+    <div id ="linebymiddle">
+    <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+    alt="CafetechLogo" width="50px" height="50px">
+    <div id="menu" style="display: none;" >
+        <ul>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\about.html" >ABOUT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Shop.html">SHOP</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Services.html">SERVICES</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\contact.html">CONTACT</a></li>
+            <li><a id="userinfo"> </a></li>
+        </ul>
+        </div>
+    </div>
+    
+       <div class="home">
+        <center>
+     <p>Home Page</p> 
+        </center>
+    </div>
+    <div id="login-form"> 
+        <h2 id="Loginletter">Login</h2>
+        <br>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+    
+            <button type="submit" onclick="updateLoginHeading();return false">Login</button>
+            
+            <div class="signuplink">
+                <br>
+                
+                <a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\signup.html">Create new account</a>
+                <br>
+            </div>
+        </form>
+    </div>
+       <p id="Text">Welcome to CafeTech Entrepreneurs Association</p>
+        
+        <br>
+        <br>
+        
+       <div class="boxHome">
+       <p> Unlock a world of possibilities by logging into your account 
+        and delving deeper into our captivating webpages. For those without an account, don't you worry because you 
+        can log-in using your account on facebook, but for those not have really account you can
+        seize the opportunity to create a new account and embark on an enriching journey with us.
+        Experience the best of what we have to offer – from exclusive content to personalized services.
+        Your adventure begins here<p>
+        </div>   
+           <br>
+           <br>
+            <div style="color: rgb(255, 255, 255); font-size: larger;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr> 
+                <center>
+                <p>Video</p>
+                </center>
+                <hr>
+            </div> 
+            <div >
+                <center>
+            <video width="350px" height="350px" controls>
+                <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\HOME.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </center>
+            </video>
+            <div style="color: rgb(255, 255, 255); font-size: larger;">
+                <hr> 
+                <center>
+                <p>Audio</p>
+                </center>
+                <hr>
+            </div> 
+            <div >
+                <br>
+                <br>
+            <center>
+            <audio controls>
+                <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\HOME.mp3" type="audio/mpeg">
+                Your browser does not support the video tag.
+            </center>
+            </video>
+            </div>
+        </div>
+     <footer>  
+   
+         <p>©2023 CafeTech</p>
+     
+     </footer>
+    </div>    
+</div>
+</body>
+
+</html>
