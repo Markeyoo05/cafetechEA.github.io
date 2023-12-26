@@ -1,0 +1,255 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+               <!DOCTYPE html>
+               <html>
+               <head> 
+                  <title>CafeTech-Shop</title>
+                  <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+               <style>
+                   .shop-container {
+                       display: flex;
+                       flex-wrap: wrap;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 20px;
+                   }
+               
+                   .product-box {
+                       width: 250px;
+                       height: 550px;
+                       margin: 20px;
+                       padding: 20px;
+                       text-align: center;
+                       border: 3px solid #ccc;
+                       border-radius: 10px;
+                       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                   }
+                   .selected{
+                       text-align: left;
+                   }
+                   .product-box h3{
+                       font-size: 10px;
+                       text-align: justify;
+                       color: #ffffff;
+                       -webkit-text-stroke: 0.2px #010000;
+               
+                   }
+                   .product-box img {
+                       width: 250px;
+                       height: 250px;
+                       object-fit: cover;
+                       margin-bottom: 10px;
+                   }
+               
+                   .quantity-input {
+                       width: 60px;
+                       padding: 5px;
+                       margin-top: 10px;
+                       border: 3px solid #ccc;
+                       border-radius: 5px;
+                       text-align: center;
+                   }
+               
+                   .add-to-cart-btn {
+                       margin-top: 15px;
+                       padding: 10px 20px;
+                       background-color: #4caf50;
+                       color: white;
+                       border: none;
+                       border-radius: 5px;
+                       cursor: pointer;
+                   }
+               
+                   .add-to-cart-btn:hover {
+                       background-color: #45a049;
+                   }
+                   .smiley{
+                         font-size: 15px;
+                       }
+                   
+               </style>
+               
+               </head>
+               <body>
+                   <div class="background">
+                        <video id="video-background" autoplay loop muted>
+                        <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                   <div class="content">
+                   <div id ="linebymiddle">
+                        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+                        alt="CafetechLogo" width="50px" height="50px">
+                   <div id="menu">
+                   <ul>
+                       <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\about.html">ABOUT</a></li>
+                           <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Shop.html">SHOP</a></li>
+                           <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Services.html">SERVICES</a></li>
+                           <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\contact.html">CONTACT</a></li>
+                           <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\home.html" id="logout" >LOGOUT <span class="smiley">😫</span></a></li>
+                   </ul>
+                   </div>
+                   </div>
+                   <div class="home">
+                   <center>
+                        <p>Shop</p> 
+                   </center>
+                   <div class="shop-container">
+                   <div class="product-box">
+                       <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product1.jpg"  alt="Product 1">
+                       <h3>EONE Desktop Computer Set Gaming PC Set SSD Mini Host PC Gaming Computer 17/19/22/24/27 inch LED Monitor Computer Set sale.</h3>
+                   <div class="selected">
+                       <label for="CPU">Processor:</label>
+                       <select id="CPU">
+                           <option value="large">Intel Core i9</option>
+                           <option value="medium">Intel Core i7</option>
+                           <option value="small">Intel Core i5</option>
+                           <option value="smaller">Intel Core i3</option>
+                           <option value="smaller1">Intel Core M</option>
+                           <option value="smaller2">Intel Xeon</option>
+                           <option value="smaller3">Intel Pentium</option>
+                           <option value="smaller4">Intel Celeron</option>
+                           <option value="smaller5">Intel Atom</option>
+                           <option value="smaller6">Intel Core X-Series</option>
+                           </select> 
+                   <br>
+                       <label for="RAM">RAM:</label>
+                       <select id="RAM">
+                           <option value="small">4GB</option>
+                           <option value="medium">6GB</option>
+                           <option value="large">8GB</option>
+                           <option value="large">16GB</option>
+                       </select> 
+                   <br>
+                       <label for="size">Size:</label>
+                       <select id="size">
+                           <option value="small">128GB SSD</option>
+                           <option value="medium">240GB SSD</option>
+                           <option value="large">512GB SSD</option>
+                           <option value="large">1TB SSD</option>
+                       </select> 
+                   <br>
+                       <label for="sizeTV">TV Size:</label>
+                       <select id="sizeTV">
+                           <option value="small">17 inch  </option>
+                           <option value="medium">19 inch</option>
+                           <option value="large">22 inch</option>
+                           <option value="large">24 inch</option>
+                           <option value="large">27 inch</option>
+                       </select>
+                   </div>                            
+                       <p>₱16,983.00</p>
+                       <input type="number" placeholder="Quantity" class="quantity-input">
+                   <form>
+                       <button class="add-to-cart-btn">Add to Cart</button>
+                   </form>
+                   </div>
+                   <div class="product-box">
+                       <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product2.jpg" alt="Product 2">
+                       <h3>PC Set Gaming Desktop Computer Set Ryzen 5 5600G Ryzen 3 3200G With 8G/16G Memory 60G 120G 240G ssd 500g 1T hdd DIY Desktop computer with RGB LED.</h3>
+                   <div class="selected">
+                       <label for="CPU">Processor:</label>
+                       <select id="CPU">
+                           <option value="large">Ryzen 9</option>
+                           <option value="medium">Ryzen 7</option>
+                           <option value="small">Ryzen 5</option>
+                           <option value="smaller">Ryzen 3</option>
+                           <option value="smaller1">Ryzen Threadripper</option>
+                           <option value="smaller2">Ryzen G-Series</option>
+                       </select> 
+                   <br>
+                       <label for="RAM">RAM:</label>
+                       <select id="RAM" >
+                           <option value="small">4GB</option>
+                           <option value="medium">6GB</option>
+                           <option value="large">8GB</option>
+                           <option value="large">16GB</option>
+                       </select> 
+                   <br>
+                       <label for="size">Size:</label>
+                       <select id="size" >
+                           <option value="small">128GB SSD</option>
+                           <option value="medium">240GB SSD</option>
+                           <option value="large">512GB SSD</option>
+                           <option value="large">1TB SSD</option>
+                       </select> 
+                   <br>
+                       <label for="sizeTV">TV Size:</label>
+                       <select id="sizeTV">
+                           <option value="small">17 inch  </option>
+                           <option value="medium">19 inch</option>
+                           <option value="large">22 inch</option>
+                           <option value="large">24 inch</option>
+                           <option value="large">27 inch</option>
+                       </select>
+                   </div>                 
+                       <p>₱21,192.00</p>
+                       <input type="number" placeholder="Quantity" class="quantity-input">
+                   <br>
+                   <form>
+                       <button class="add-to-cart-btn">Add to Cart</button>
+                   </form>
+                   </div>
+                   <div class="product-box">
+                       <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product3.jpg" alt="Product 3">
+                       <h3>Canon PiXMA MG2570S 3-in-1 Printer | Canon Printer | Office Printer | Printers | Multi-function Printer | Printer Scanner | InkJet Printer - CANON PRINTER.</h3>
+                       <p>₱2,999.00</p>
+                       <input type="number" placeholder="Quantity" class="quantity-input">
+                   <br>
+                   <form>
+                       <button class="add-to-cart-btn">Add to Cart</button>
+                   </form>
+                   </div>
+                   <div class="product-box">
+                       <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product4.jpg" alt="Product 4">
+                       <h3>Thermal Printer Bluetooth Photo Pocket Printer 57 Mm Printing Wireless.</h3>
+                       <p>₱494.00</p>
+                       <input type="number" placeholder="Quantity" class="quantity-input">
+                   <br>
+                   <form>
+                       <button class="add-to-cart-btn">Add to Cart</button>
+                   </form>
+                       </div>
+                   <div class="product-box">
+                       <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product5.jpg" alt="Product 5">
+                       <h3>ZIFRIEND ZA646 Mechanical Keyboard Wired / Bluetooth / 2.4G 3 Mode Mini Wireless Gaming Keyboard 63 Keys 3 Pin Switch RGB Backlight Hot swappable Blue / Red Switch.</h3>
+                       <label for="VARIETY">Color:</label>
+                       <select id="VARIETY">
+                           <option value="colorA">Black  </option>
+                           <option value="colorB">White</option>
+                           <option value="colorC">W/B</option>
+                           <option value="colorD">Pink</option>
+                           <option value="colorE">BLue</option>
+                       </select>
+                           <p>₱679.00</p>
+                           <input type="number" placeholder="Quantity" class="quantity-input">
+                   <br>
+                   <form>
+                       <button class="add-to-cart-btn">Add to Cart</button>
+                   </form>
+                   </div>
+                   <div class="product-box">
+                        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product6.jpg" alt="Product 6">
+                        <h3>V2S MS103 Mouse USB Wired Gaming Cool High Configuration Led Back light For Laptop PC.</h3>
+                        <p>₱59.97</p>
+                        <input type="number" placeholder="Quantity" class="quantity-input">
+                   <br>
+                   <form>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                   </form>
+                   </div>
+                   </div>
+                       <center>
+                           <p>BUY NOW !!</p>
+                       </center>
+                   <footer>  
+                           <p>©2023 CafeTech</p>
+                                   
+                   </footer>
+                           </div>    
+                       </div>
+                 </body>             
+               </html>
+                              

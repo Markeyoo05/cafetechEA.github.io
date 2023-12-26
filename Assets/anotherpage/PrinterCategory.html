@@ -1,0 +1,253 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+<!DOCTYPE html>
+<html>
+<head> 
+   <title>CafeTech-Shop</title>
+   <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+<style>
+    .shop-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product-box {
+        width: 310px;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-box h3{
+        font-size: 10px;
+        text-align: justify;
+        color: #ffffff;
+        -webkit-text-stroke: 0.2px #010000;
+    }
+    .product-box img {
+                       width: 250px;
+                       height: 250px;
+                       object-fit: cover;
+                       margin-bottom: 10px;
+                   }   
+    .smiley{
+          font-size: 15px;
+        }
+    .shop-container a {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.25em;
+        display:inline-block;
+        padding: 15px 20px;
+        position: relative;
+        font-size:10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    } 
+    .shop-container a:hover{
+        background-color: #63119a ;
+    }
+    .quantity-input {
+        width: 60px;
+        padding: 5px;
+        margin-top: 10px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+               
+    .Buy-btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+               
+    .Buy-btn:hover {
+        background-color: #45a049;
+    }    
+    .quantitySeller{
+        color: #5a5757;
+        font-size: 12px;
+    }
+    .quantitySeller2{
+        color: #c3fb2a;
+        font-size: 12px;
+    }
+</style>
+<script src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\printerProducts.js"></script>
+</head>
+<body>
+    <div class="background">
+         <video id="video-background" autoplay loop muted>
+         <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>
+    <div class="content">
+    <div id ="linebymiddle">
+         <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+         alt="CafetechLogo" width="50px" height="50px">
+    <div id="menu">
+    <ul>
+        <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\about.html">ABOUT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Shop.html">SHOP</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Services.html">SERVICES</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\contact.html">CONTACT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\home.html" id="logout" >LOGOUT <span class="smiley">😫</span></a></li>
+    </ul>
+    </div>
+    </div>
+    <p id="printerBack"></p>
+<div class="home">
+    <center>
+         <p>Shop</p> 
+    </center>
+    <div class="shop-container">
+      
+        <a href="Shop.html" >Computer Category</a></h3>
+   
+        <h3><a href="LaptopCategory.html">Laptop Category</a></h3>
+
+    
+        <h3><a href="MouseCategory.html">Mouse Category</a></h3>
+   
+  
+        <h3><a href="KeyboardCategory.html">Keyboard Category</a></h3>
+   
+    
+        <h3><a href="PrinterCategory.html">Printer Category</a></h3>
+   
+    
+        <h3><a href="SpeakerCategory.html">Speaker Category</a></h3>
+</div>
+
+<hr>    
+   <center>
+    <p>Printer Category</p>
+   </center>
+<hr>
+<div id = "menu">
+    <a href="#printerCenter">Go Down</a>
+  </div>
+    <div class="shop-container">
+        <div class="product-box">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\product1.jpg" alt="Product 1">
+            <h3 id="product1-name">Epson L121 Ink Tank Printer with Heat-Free Technology and Low-cost Printing</h3>
+            <br>
+            <form>
+            <p id="product1-price" >₱5,666.00 </p>
+            <label for="quantity" class="quantitySeller2" >Quantity:
+                <br>
+            <input type="number" class="quantity-input" id="product1" value="1"  >
+            </label>
+            <p class= "quantitySeller" id="quantitySellerproduct1" >19 pieces available</p>
+            <button class="Buy-btn" onclick="buyNow('product1','product1-price','quantitySellerproduct1','product1-name');return false">BUY NOW</button>
+        </form>
+        </div>
+     <!--Product 2-->
+        <div class="product-box">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\product2.jpg" alt="Product 2">
+            <h3 id ="product2-name">Canon Pixma E510 MP237 and MP287 printer, scanner and xerox with CISS</h3>
+            <br>
+            <form>
+            <p id="product2-price" >₱10,999.00 </p>
+            <label for="quantity" class="quantitySeller2" >Quantity:
+                <br>
+            <input type="number" class="quantity-input" id="product2" value="1"  >
+            </label>
+            <p class= "quantitySeller" id="quantitySellerproduct2" >10 pieces available</p>
+            <button class="Buy-btn" onclick="buyNow('product2','product2-price','quantitySellerproduct2','product2-name');return false">BUY NOW</button>
+        </form>
+        </div>
+        <p id="printerCenter"></p>
+        <!--Product 3-->
+        <div class="product-box">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\product3.jpg" alt="Product 3">
+            <h3 id ="product3-name">EPSON Printer Eco Tank ET-5290 Multifunction Wireless 3 In 1</h3>
+            <br>
+            <form>
+           
+            <p id="product3-price">₱6,999.00 </p>
+            <label for="quantity" class="quantitySeller2" >Quantity:
+                <br>
+            <input type="number" class="quantity-input" id="product3" value="1"  >
+            </label>
+            <p class= "quantitySeller" id="quantitySellerproduct3" >10 pieces available</p>
+            <button class="Buy-btn" onclick="buyNow('product3','product3-price','quantitySellerproduct3','product3-name');return false">BUY NOW</button>
+        </form>
+        </div>
+        <!--Product 4-->
+        <div class="product-box">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\product4.jpg" alt="Product 4">
+            <h3 id="product4-name">HP Deskjet Ink Advantage 2337 A4 Color Printer All in One Printer, Scanner, Copy</h3>
+            <br>
+            <form>
+            <p id="product4-price">₱5,999.00 </p>
+            <label for="quantity" class="quantitySeller2" >Quantity:
+                <br>
+            <input type="number" class="quantity-input" id="product4" value="1"  >
+            </label>
+            <p class= "quantitySeller" id="quantitySellerproduct4" >10 pieces available</p>
+            <button class="Buy-btn" onclick="buyNow('product4','product4-price','quantitySellerproduct4','product4-name');return false">BUY NOW</button>
+        </form>
+        </div>
+        <!--Product 5 -->
+        <div class="product-box">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\product5.jpg" alt="Product 5">
+            <h3 id="product5-name">Portable Mini Label Printer Photo Thermal Adhesive Labels Printers Inkless Bluetooth Pocket Mini Printer Stickers Maker 57MM</h3>
+            <br>
+            <form>
+           
+            <p id="product5-price">₱599.00 </p>
+            <label for="quantity" class="quantitySeller2" >Quantity:
+                <br>
+            <input type="number" class="quantity-input" id="product5" value="1"  >
+            </label>
+            <p class= "quantitySeller" id="quantitySellerproduct5" >22 pieces available</p>
+            <button class="Buy-btn" onclick="buyNow('product5','product5-price','quantitySellerproduct5','product5-name');return false">BUY NOW</button>
+        </form>
+        </div>
+        <!--Product 6 -->
+        <div class="product-box">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\printerProducts\product6.jpg" alt="Product 6">
+            <h3 id="product6-name">Brand New Canon Pixma T207 and MG2570S printer scanner and xerox photocopy brand new with CISS</h3>
+            <br>
+            <form>
+            <p id="product6-price">₱1,999.00 </p>
+            <label for="quantity" class="quantitySeller2" >Quantity:
+                <br>
+            <input type="number" class="quantity-input" id="product6" value="1"  >
+            </label>
+            <p class= "quantitySeller" id="quantitySellerproduct6" >9 pieces available</p>
+            <button class="Buy-btn" onclick="buyNow('product6','product6-price','quantitySellerproduct6','product6-name');return false">BUY NOW</button>
+        </form>
+        </div>
+    </div>
+    <div id = "menu">
+        <a href="#printerBack">Go to Top</a>
+     </div>
+    <center>
+        <p>BUY NOW !!</p>
+    </center>
+    <footer>  
+    <br>
+    <br>
+        <p>©2023 CafeTech</p>
+                
+    </footer>
+        </div>    
+    </div>
+</body>
+
+</html>

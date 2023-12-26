@@ -1,0 +1,169 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>CafeTech-ContactUs</title>
+    <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+<style>
+    .form-all {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .form-container {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label,input,textarea {
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .contact-info {
+        max-width: 300px;
+        padding-left: 100px;
+    }
+
+    .contact-head{ 
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #fbfdfe;
+    }
+
+    .contact-info address {
+        margin-bottom: 20px;
+        color: #fbfdfe;
+    }
+
+    .contact-info a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .form-container {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    /* Additional styles for social media icon */
+    .social-media {
+        margin-top: 20px;
+        color: #f9f9f9;
+    }
+
+    .social-icon {
+        font-family: "Segoe UI Symbol";
+        font-size: 24px;
+        text-decoration: none;
+        color: #f9f6f6;
+        margin-left: 10px;
+    }
+
+    .social-icon:hover {
+        color: #007bff;
+    }
+    .smiley{
+          font-size: 15px;
+        }
+</style>
+<script src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\path\to\script.js"></script>
+</head>
+<body>
+    <div class="background">
+        <video id="video-background" autoplay loop muted>
+        <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    <div class="content">
+    <div id ="linebymiddle">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+         alt="CafetechLogo" width="50px" height="50px">
+    <div id="menu">
+        <ul>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\about.html">ABOUT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Shop.html">SHOP</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Services.html">SERVICES</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\contact.html">CONTACT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\home.html" id="logout" >LOGOUT <span class="smiley">😫</span></a></li>
+        </ul>
+    </div>
+    </div>
+        <div class="container">
+        <div class="contact-info">
+        <div class="contact-head">              
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for further details and inquiries we're here to help.</p>
+        </div>
+            <address >
+                <p>☎ 0963 212 2892</p>
+                <p>✉ markcleocalbang22@gmail.com</p>
+            </address>
+        <div class="social-media">
+            <span>Follow us:</span>
+            <a href="https://www.facebook.com/groups/785882776629923/?mibextid=oMANbw" target="_blank" class="social-icon"></a>
+        </div>
+
+        </div>
+            <div class="form-container">
+                <h2>SEND US A QUICK MESSAGE</h2>
+                <p>Fields marked with an * are required</p>
+            <form>
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contact">Contact No *</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">How can we help? *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" onclick="sent();">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>    
+        <p>©2023 CafeTech</p>           
+    </footer>
+      
+</body>
+               
+</html>
+               

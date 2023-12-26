@@ -1,0 +1,315 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+<!DOCTYPE html>
+<html>
+<head> 
+   <title>CafeTech-Shop</title>
+   <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+<style>
+    .shop-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product-box {
+        width: 600px;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-box h3{
+        font-size: 10px;
+        text-align: justify;
+        color: #ffffff;
+        -webkit-text-stroke: 0.2px #010000;
+    }
+    .product-box img {
+        width:350px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 10px;
+                   }   
+    .smiley{
+          font-size: 15px;
+        }
+    .shop-container a {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.25em;
+        display:inline-block;
+        padding: 15px 20px;
+        position: relative;
+        font-size:10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    } 
+    .shop-container a:hover{
+        background-color: #63119a ;
+    }
+    .quantity-input {
+        width: 60px;
+        padding: 5px;
+        margin-top: 10px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+               
+    .Buy-btn{
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+               
+    .Buy-btn:hover {
+        background-color: #45a049;
+    }    
+    .quantitySeller{
+        color: #5a5757;
+        font-size: 12px;
+    }
+    .quantitySeller2{
+        color: #c3fb2a;
+        font-size: 12px;
+    }
+    .BTNvariation{
+        margin:5px;
+    }
+    .BTNvariation:hover{
+        background-color: #c7fd6f;
+       
+    }
+</style>
+<script src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\shop.js"></script>
+</head>
+<body>
+    <div class="background">
+         <video id="video-background" autoplay loop muted>
+         <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>
+    <div class="content">
+    <div id ="linebymiddle">
+         <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+         alt="CafetechLogo" width="50px" height="50px">
+    <div id="menu">
+    <ul>
+        <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\about.html">ABOUT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Shop.html">SHOP</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Services.html">SERVICES</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\contact.html">CONTACT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\home.html" id="logout" >LOGOUT <span class="smiley">😫</span></a></li>
+    </ul>
+    </div>
+    </div>
+    <p id="computerBack"></p>
+<div class="home">
+    <center>
+         <p>Shop</p> 
+    </center>
+    <div class="shop-container">
+      
+        <a href="Shop.html" >Computer Category</a></h3>
+   
+        <h3><a href="LaptopCategory.html">Laptop Category</a></h3>
+
+    
+        <h3><a href="MouseCategory.html">Mouse Category</a></h3>
+   
+  
+        <h3><a href="KeyboardCategory.html">Keyboard Category</a></h3>
+   
+    
+        <h3><a href="PrinterCategory.html">Printer Category</a></h3>
+   
+    
+        <h3><a href="SpeakerCategory.html">Speaker Category</a></h3>
+</div>
+<hr>
+   <center>
+    <p>Computer Category</p>
+   </center>
+<hr>
+<div id = "menu">
+    <a href="#computerCenter">Go Down</a>
+  </div>
+<div class="shop-container"> 
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product1.jpg"  alt="Product 1">
+        <h3 id="product1-name">EONE Desktop Computer Set Gaming PC Set SSD Mini Host PC Gaming Computer 17/19/22/24/27 inch LED Monitor Computer Set sale.</h3>
+        <form>
+            <label for="variation">Variation: <br></label>
+            <button class="BTNvariation" type="submit" id="monitor" value="7,680" onclick="updatePrice('Monitor 27inch','monitor','product1-price','quantitySellerproduct1','15');return false">Monitor 27inch</button>
+            <button class="BTNvariation" type="submit" id="product1inteli9one" value="25,999" onclick="updatePrice('Intel i9/16GB/512GB SSD/24inch Monitor','product1inteli9one','product1-price','quantitySellerproduct1','13');return false">Intel i9/16Gb/512GB SSD/24inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli9one1" value="24,599" onclick="updatePrice('Intel i9/16GB/512GB SSD/19inch Monitor','product1inteli9one1','product1-price','quantitySellerproduct1','12');return false">Intel i9/16GB/512GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli9two" value="23,999" onclick="updatePrice('Intel i9/8GB/256GB SSD/24inch Monitor','product1inteli9two','product1-price','quantitySellerproduct1','13');return false">Intel i9/8GB/256GB SSD/24inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli9two1" value="23,599" onclick="updatePrice('Intel i9/8GB/256GB SSD/19inch Monitor','product1inteli9two1','product1-price','quantitySellerproduct1','14');return false">Intel i9/8GB/256GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli9tree" value="21,999" onclick="updatePrice('Intel i9/4GB/128GB SSD/24inch Monitor','product1inteli9tree','product1-price','quantitySellerproduct1','10');return false">Intel i9/4GB/128GB SSD/24inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="product1inteli9tree1" value="21,599" onclick="updatePrice('Intel i9/4GB/128GB SSD/19inch Monitor','product1inteli9tree1','product1-price','quantitySellerproduct1','11');return false">Intel i9/4GB/128GB SSD/19inch Monitor</button>          
+           <!--Next i7-->      
+            <br>
+            <br>
+            <button class="BTNvariation" type="submit" id="product1inteli7one" value="21,000" onclick="updatePrice('Intel i7/16GB/512GB SSD/24inch Monitor','product1inteli7one','product1-price','quantitySellerproduct1','12');return false">Intel i7/16GB/512GB SSD/24inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli7one1" value="20,599" onclick="updatePrice('Intel i7/16GB/512GB SSD/19inch Monitor','product1inteli7one1','product1-price','quantitySellerproduct1','14');return false">Intel i7/16GB/512GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli7two" value="19,899" onclick="updatePrice('Intel i7/8GB/256GB SSD/24inch Monitor','product1inteli7two','product1-price','quantitySellerproduct1','9');return false">Intel i7/8GB/256GB SSD/24inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli7two1" value="19,000" onclick="updatePrice('Intel i7/8GB/256GB SSD/19inch Monitor','product1inteli7two1','product1-price','quantitySellerproduct1','5');return false">Intel i7/8GB/256GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli7tree" value="18,599" onclick="updatePrice('Intel i7/4GB/128GB SSD/24inch Monitor','product1inteli7tree','product1-price','quantitySellerproduct1','9');return false">Intel i7/4GB/128GB SSD/24inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="product1inteli7tree1" value="17,999" onclick="updatePrice('Intel i7/4GB/128GB SSD/19inch Monitor','product1inteli7tree1','product1-price','quantitySellerproduct1','10');return false">Intel i7/4GB/128GB SSD/19inch Monitor</button>          
+             <!--Next i5-->
+             <br>
+             <br>
+            <button class="BTNvariation" type="submit" id="product1inteli5one" value="15,999" onclick="updatePrice('Intel i5/16GB/512GB SSD/22inch Monitor','product1inteli5one','product1-price','quantitySellerproduct1','12');return false">Intel i5/16GB/512GB SSD /22inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli5one1" value="15,599" onclick="updatePrice('Intel i5/16GB/512GB SSD/17inch Monitor','product1inteli5one1','product1-price','quantitySellerproduct1','10');return false">Intel i5/16GB/512GB SSD/17inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli5two" value="14,999" onclick="updatePrice('Intel i5/8GB/256GB SSD/22inch Monitor','product1inteli5two','product1-price','quantitySellerproduct1','8');return false">Intel i5/8GB/256GB SSD/22inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli5two1" value="14,599" onclick="updatePrice('Intel i5/8GB/256GB SSD/17inch Monitor','product1inteli5two1','product1-price','quantitySellerproduct1','7');return false">Intel i5/8GB/256GB SSD/17inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product1inteli5tree" value="13,999" onclick="updatePrice('Intel i5/4GB/128GB SSD/22inch Monitor','product1inteli5tree','product1-price','quantitySellerproduct1','11');return false">Intel i5/4GB/128GB SSD/22inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="product1inteli5tree1" value="13,599" onclick="updatePrice('Intel i5/4GB/128GB SSD/17inch Monitor','product1inteli5tree1','product1-price','quantitySellerproduct1','21');return false">Intel i5/4GB/128GB SSD/17inch Monitor</button>          
+
+         
+           <br>
+        <p id="product1-price">₱7,680.00 - ₱25,999.00 </p>
+        <label for="quantity" class="quantitySeller2" >Quantity:
+            <br>
+            <input type="number" value="1" class="quantity-input" id="product1">
+    </label>
+        <p class="quantitySeller" id="quantitySellerproduct1" ></p>
+    
+        <button class="Buy-btn" onclick="buyNow2('product1','product1-price','quantitySellerproduct1','product1-name');return false" >BUY NOW</button>
+    
+    </form>
+    </div>
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product2.jpg" alt="Product 2">
+        <h3 id="product2-name">PC Set Gaming Desktop Computer Set Ryzen 5 5600G Ryzen 3 3200G With 8G/16G Memory 60G 120G 240G ssd 500g 1T hdd DIY Desktop computer with RGB LED.</h3>
+        <form>
+            <label for="variation">Variation: <br></label>
+            <button class="BTNvariation" type="submit" id="rayzen9Price1" value="31,999" onclick="updatePrice('rayzen 9/32GB/512GB SSD/1TB HDD/27inch Monitor','rayzen9Price1','product2-price','quantitySellerproduct2','13');return false">rayzen 9/32GB/512GB SSD/1TB HDD/27inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="rayzen9Price2" value="28,999" onclick="updatePrice('rayzen 9/32GB/512GB SSD/1TB HDD/24inch Monitor','rayzen9Price2','product2-price','quantitySellerproduct2','12');return false">rayzen 9/32GB/256GB SSD/500 HDD/24inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="rayzen9Price3" value="26,999" onclick="updatePrice('rayzen 9/16GB/256GB SSD/500 HDD/27inch Monitor','rayzen9Price3','product2-price','quantitySellerproduct2','13');return false">rayzen 9/16GB/256GB SSD/500 HDD/27inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="rayzen9Price4" value="23,899" onclick="updatePrice('rayzen 9/16GB/256GB SSD/500 HDD/24inch Monitor','rayzen9Price4','product2-price','quantitySellerproduct2','14');return false">rayzen 9/16GB/256GB SSD/500 HDD/24inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="rayzen9Price5" value="22,999" onclick="updatePrice('rayzen 9/8GB/128GB SSD/320 HDD/19inch Monitor','rayzen9Price5','product2-price','quantitySellerproduct2','10');return false">rayzen 9/8GB/128GB SSD/320 HDD/19inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="rayzen9Price6" value="22,699" onclick="updatePrice('rayzen 9/8GB/128GB SSD/320 HDD/17inch Monitor','rayzen9Price6','product2-price','quantitySellerproduct2','11');return false">rayzen 9/8GB/128GB SSD/320 HDD/17inch Monitor</button>          
+           <!--Next rayzen 7-->     
+           <br>
+           <br> 
+           <button class="BTNvariation" type="submit" id="rayzen7Price1" value="20,999" onclick="updatePrice('rayzen 7/32GB/512GB SSD/1TB HDD/24inch Monitor','rayzen7Price1','product2-price','quantitySellerproduct2','13');return false">rayzen 7/32GB/512GB SSD/1TB HDD/24inch Monitor</button>
+           <button class="BTNvariation" type="submit" id="rayzen7Price2" value="20,599" onclick="updatePrice('rayzen 7/32GB/512GB SSD/1TB HDD/21inch Monitor','rayzen7Price2','product2-price','quantitySellerproduct2','12');return false">rayzen 7/32GB/256GB SSD/500 HDD/21inch Monitor</button>
+           <button class="BTNvariation" type="submit" id="rayzen7Price3" value="19,999" onclick="updatePrice('rayzen 7/16GB/256GB SSD/500 HDD/24inch Monitor','rayzen7Price3','product2-price','quantitySellerproduct2','13');return false">rayzen 7/16GB/256GB SSD/500 HDD/24inch Monitor</button>
+           <button class="BTNvariation" type="submit" id="rayzen7Price4" value="19,599" onclick="updatePrice('rayzen 7/16GB/256GB SSD/500 HDD/21inch Monitor','rayzen7Price4','product2-price','quantitySellerproduct2','14');return false">rayzen 7/16GB/256GB SSD/500 HDD/21inch Monitor</button>
+           <button class="BTNvariation" type="submit" id="rayzen7Price5" value="18,999" onclick="updatePrice('rayzen 7/8GB/128GB SSD/320 HDD/19inch Monitor','rayzen7Price5','product2-price','quantitySellerproduct2','10');return false">rayzen 7/8GB/128GB SSD/320 HDD/19inch Monitor</button>   
+           <button class="BTNvariation" type="submit" id="rayzen7Price6" value="18,599" onclick="updatePrice('rayzen 7/8GB/128GB SSD/320 HDD/17inch Monitor','rayzen7Price6','product2-price','quantitySellerproduct2','11');return false">rayzen 7/8GB/128GB SSD/320 HDD/17inch Monitor</button>          
+          <!--Next rayzen 5-->    
+          <br>
+          <br>  
+          <button class="BTNvariation" type="submit" id="rayzen3Price1" value="16,999" onclick="updatePrice('rayzen 3/32GB/512GB SSD/1TB HDD/27inch Monitor','rayzen3Price1','product2-price','quantitySellerproduct2','13');return false">rayzen 3/32GB/512GB SSD/1TB HDD/27inch Monitor</button>
+          <button class="BTNvariation" type="submit" id="rayzen3Price2" value="16,599" onclick="updatePrice('rayzen 3/32GB/512GB SSD/1TB HDD/24inch Monitor','rayzen3Price2','product2-price','quantitySellerproduct2','12');return false">rayzen 3/32GB/256GB SSD/500 HDD/24inch Monitor</button>
+          <button class="BTNvariation" type="submit" id="rayzen3Price3" value="15,999" onclick="updatePrice('rayzen 3/16GB/256GB SSD/500 HDD/24inch Monitor','rayzen3Price3','product2-price','quantitySellerproduct2','13');return false">rayzen 3/16GB/256GB SSD/500 HDD/24inch Monitor</button>
+          <button class="BTNvariation" type="submit" id="rayzen3Price4" value="15,599" onclick="updatePrice('rayzen 3/16GB/256GB SSD/500 HDD/21inch Monitor','rayzen3Price4','product2-price','quantitySellerproduct2','14');return false">rayzen 3/16GB/256GB SSD/500 HDD/21inch Monitor</button>
+          <button class="BTNvariation" type="submit" id="rayzen3Price5" value="14,999" onclick="updatePrice('rayzen 3/8GB/128GB SSD/320 HDD/19inch Monitor','rayzen3Price5','product2-price','quantitySellerproduct2','10');return false">rayzen 3/8GB/128GB SSD/320 HDD/19inch Monitor</button>   
+          <button class="BTNvariation" type="submit" id="rayzen3Price6" value="14,599" onclick="updatePrice('rayzen 3/8GB/128GB SSD/320 HDD/17inch Monitor','rayzen3Price6','product2-price','quantitySellerproduct2','11');return false">rayzen 3/8GB/128GB SSD/320 HDD/17inch Monitor</button>          
+         <!--Next rayzen 5-->      
+         <p id="computerCenter"></p>
+           <br>
+        <p id="product2-price">₱14,599.00 - ₱31,999.00 </p>
+        <label for="quantity" class="quantitySeller2" >Quantity:
+            <br>
+            <input type="number" value="1" class="quantity-input" id="product2">
+    </label>
+        <p class="quantitySeller" id="quantitySellerproduct2" ></p>
+    
+        <button class="Buy-btn" onclick="buyNow2('product2','product2-price','quantitySellerproduct2','product2-name');return false" >BUY NOW</button>
+    
+    </form>
+    </div>
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\product7.jpg" alt="Product ">
+        <h3 id="product3-name">Dell Optiplex 3060/3070/5060/7060 micro 8-9th Gen Intel Core i5-i7 16GB RAM 256GB SSD Windows 11 PRO</h3>
+    <form>
+    <!--Next i7-->      
+            <button class="BTNvariation" type="submit" id="product2inteli7one" value="24,000" onclick="updatePrice('Intel i7/16GB/512GB SSD/21inch Monitor','product2inteli7one','product3-price','quantitySellerproduct3','12');return false">Intel i7/16GB/512GB SSD/21inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli7one1" value="23,899" onclick="updatePrice('Intel i7/16GB/512GB SSD/19inch Monitor','product2inteli7one1','product3-price','quantitySellerproduct3','14');return false">Intel i7/16GB/512GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli7two" value="22,899" onclick="updatePrice('Intel i7/8GB/256GB SSD/21inch Monitor','product2inteli7two','product3-price','quantitySellerproduct3','9');return false">Intel i7/8GB/256GB SSD/21inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli7two1" value="22,000" onclick="updatePrice('Intel i7/8GB/256GB SSD/19inch Monitor','product2inteli7two1','product3-price','quantitySellerproduct3','5');return false">Intel i7/8GB/256GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli7tree" value="21,599" onclick="updatePrice('Intel i7/4GB/128GB SSD/21inch Monitor','product2inteli7tree','product3-price','quantitySellerproduct3','9');return false">Intel i7/4GB/128GB SSD/21inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="product2inteli7tree1" value="20,999" onclick="updatePrice('Intel i7/4GB/128GB SSD/19inch Monitor','product2inteli7tree1','product3-price','quantitySellerproduct3','10');return false">Intel i7/4GB/128GB SSD/19inch Monitor</button>          
+             <!--Next i5-->
+             <br>
+             <br>
+            <button class="BTNvariation" type="submit" id="product2inteli5one" value="20,599" onclick="updatePrice('Intel i5/16GB/512GB SSD/21inch Monitor','product2inteli5one','product3-price','quantitySellerproduct3','12');return false">Intel i5/16GB/512GB SSD /21inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli5one1" value="19,999" onclick="updatePrice('Intel i5/16GB/512GB SSD/19inch Monitor','product2inteli5one1','product3-price','quantitySellerproduct3','10');return false">Intel i5/16GB/512GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli5two" value="19,599" onclick="updatePrice('Intel i5/8GB/256GB SSD/21inch Monitor','product2inteli5two','product3-price','quantitySellerproduct3','8');return false">Intel i5/8GB/256GB SSD/21inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli5two1" value="18,599" onclick="updatePrice('Intel i5/8GB/256GB SSD/19inch Monitor','product2inteli5two1','product3-price','quantitySellerproduct3','7');return false">Intel i5/8GB/256GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli5tree" value="17,999" onclick="updatePrice('Intel i5/4GB/128GB SSD/21inch Monitor','product2inteli5tree','product3-price','quantitySellerproduct3','11');return false">Intel i5/4GB/128GB SSD/21inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="product2inteli5tree1" value="17,599" onclick="updatePrice('Intel i5/4GB/128GB SSD/19inch Monitor','product2inteli5tree1','product3-price','quantitySellerproduct3','21');return false">Intel i5/4GB/128GB SSD/19inch Monitor</button>          
+            <br>
+            <br>
+            <button class="BTNvariation" type="submit" id="product2inteli3one" value="15,999" onclick="updatePrice('Intel i3/16GB/512GB SSD/19inch Monitor','product2inteli3one','product3-price','quantitySellerproduct3','12');return false">Intel i3/16GB/512GB SSD /19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli3one1" value="15,599" onclick="updatePrice('Intel i3/16GB/512GB SSD/17inch Monitor','product2inteli3one1','product3-price','quantitySellerproduct3','10');return false">Intel i3/16GB/512GB SSD/17inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli3two" value="14,999" onclick="updatePrice('Intel i3/8GB/256GB SSD/19inch Monitor','product2inteli3two','product3-price','quantitySellerproduct3','8');return false">Intel i3/8GB/256GB SSD/19inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli3two1" value="14,599" onclick="updatePrice('Intel i3/8GB/256GB SSD/17inch Monitor','product2inteli3two1','product3-price','quantitySellerproduct3','7');return false">Intel i3/8GB/256GB SSD/17inch Monitor</button>
+            <button class="BTNvariation" type="submit" id="product2inteli3tree" value="13,999" onclick="updatePrice('Intel i3/4GB/128GB SSD/19inch Monitor','product2inteli3tree','product3-price','quantitySellerproduct3','11');return false">Intel i3/4GB/128GB SSD/19inch Monitor</button>   
+            <button class="BTNvariation" type="submit" id="product2inteli3tree1" value="13,599" onclick="updatePrice('Intel i3/4GB/128GB SSD/17inch Monitor','product2inteli3tree1','product3-price','quantitySellerproduct3','21');return false">Intel i3/4GB/128GB SSD/17inch Monitor</button>          
+
+         
+           <br>
+        <p id="product3-price">₱13,599.00 - ₱24,000.00 </p>
+        <label for="quantity" class="quantitySeller2" >Quantity:
+            <br>
+            <input type="number" value="1" class="quantity-input" id="product3">
+    </label>
+        <p class="quantitySeller" id="quantitySellerproduct3" ></p>
+    
+        <button class="Buy-btn" onclick="buyNow2('product3','product3-price','quantitySellerproduct3','product3-name');return false" >BUY NOW</button>
+    
+    
+    </form>
+    </div>
+</div>
+<div id = "menu">
+    <a href="#computerBack">Go to Top</a>
+ </div>
+        <center>
+            <p>BUY NOW !!</p>
+        </center>
+    <footer>  
+        <br>
+        <br>
+            <p>©2023 CafeTech</p>
+                    
+    </footer>
+            </div>    
+        </div>
+  </body>            
+  <script>
+  
+    var selectedVariation = "";
+    function updatePrice(variation,buttonid,productprice,quantityseller,quantiNo) {
+        selectedVariation = variation; 
+        var variationSelect = document.getElementById(buttonid).value;
+        priceParagraph = document.getElementById(productprice);
+        var quantityParagraph = document.getElementById(quantityseller);
+       
+    
+        var quantity = quantiNo;
+    
+    priceParagraph.innerHTML = "₱" + variationSelect + ".00";
+    quantityParagraph.innerHTML = quantity + " pieces available";
+    }
+
+    
+  </script>   
+</html>
+               

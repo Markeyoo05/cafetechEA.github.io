@@ -1,0 +1,343 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+<!DOCTYPE html>
+<html>
+<head> 
+   <title>CafeTech-Shop</title>
+   <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+   <script src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\laptopProducts\laptopProducts.js"></script>
+
+   
+<style>
+    .shop-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .product-box {
+        width: 500px;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-box h3{
+        font-size: 10px;
+        text-align: justify;
+        color: #ffffff;
+        -webkit-text-stroke: 0.2px #010000;
+    }
+    .product-box img {
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 10px;
+                   }   
+    .smiley{
+          font-size: 15px;
+        }
+    .shop-container a {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.25em;
+        display:inline-block;
+        padding: 15px 20px;
+        position: relative;
+        font-size:10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    } 
+    .shop-container a:hover{
+        background-color: #63119a ;
+    }
+    .quantity-input {
+        width: 60px;
+        padding: 5px;
+        margin-top: 10px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+               
+    .Buy-btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+               
+    .Buy-btn:hover {
+        background-color: #45a049;
+    }    
+    .quantitySeller{
+        color: #5a5757;
+        font-size: 12px;
+    }
+    .quantitySeller2{
+        color: #c3fb2a;
+        font-size: 12px;
+    }
+    .BTNvariation{
+        margin:5px;
+    }
+    .BTNvariation:hover{
+        background-color: #c7fd6f;
+       
+    }
+</style>
+<script src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\path\to\script.js"></script>
+</head>
+<body>
+    <div class="background">
+         <video id="video-background" autoplay loop muted>
+         <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+         </video>
+    <div class="content">
+    <div id ="linebymiddle">
+         <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+         alt="CafetechLogo" width="50px" height="50px">
+    <div id="menu">
+    <ul>
+        <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\about.html">ABOUT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Shop.html">SHOP</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\Services.html">SERVICES</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\anotherpage\contact.html">CONTACT</a></li>
+            <li><a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\home.html" id="logout" >LOGOUT <span class="smiley">😫</span></a></li>
+    </ul>
+    </div>
+    </div>
+    <p id="laptopBack"></p>
+<div class="home">
+    <center>
+         <p>Shop</p> 
+    </center>
+    <div class="shop-container">
+      
+        <a href="Shop.html" >Computer Category</a></h3>
+   
+        <h3><a href="LaptopCategory.html">Laptop Category</a></h3>
+
+    
+        <h3><a href="MouseCategory.html">Mouse Category</a></h3>
+   
+  
+        <h3><a href="KeyboardCategory.html">Keyboard Category</a></h3>
+   
+    
+        <h3><a href="PrinterCategory.html">Printer Category</a></h3>
+   
+    
+        <h3><a href="SpeakerCategory.html">Speaker Category</a></h3>
+</div>
+<hr>
+   <center>
+    <p>Laptop Category</p>
+   </center>
+<hr>
+<div id = "menu">
+    <a href="#laptopCenter">Go Down</a>
+  </div>
+<div class="shop-container"> 
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\laptopProducts\product1.jpg"  alt="Product 1">
+        <h3 id="product1-name">ICON Laptop Intel Core i7 - i5- i3 | 16GB / 8GB / 4GB Memory | 512G / 256G / 128G SSD</h3>
+        <form>  
+            <label for="variation">Variation: <br></label>
+            <button class="BTNvariation" type="submit" id="inteli7one" value="28,299" onclick="updatePrice('Intel i7 16GB 512GB SSD RoseGold','inteli7one','product1-price','quantitySellerproduct1','5');return false">Intel i7 16GB 512GB SSD RoseGold</button>
+            <button class="BTNvariation" type="submit" id="inteli7one1" value="28,199" onclick="updatePrice('Intel i7 16GB 512GB SSD Silver','inteli7one1','product1-price','quantitySellerproduct1','5');return false">Intel i7 16GB 512GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="inteli7two" value="27,599" onclick="updatePrice('Intel i7 8GB 256GB SSD RoseGold','inteli7two','product1-price','quantitySellerproduct1','9');return false">Intel i7 8GB 256GB SSD RoseGold</button>
+            <button class="BTNvariation" type="submit" id="inteli7two1" value="27,359" onclick="updatePrice('Intel i7 8GB 256GB SSD Silver','inteli7two1','product1-price','quantitySellerproduct1','9');return false">Intel i7 8GB 256GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="inteli7tree" value="26,799" onclick="updatePrice('Intel i7 4GB 128GB SSD RoseGold','inteli7tree','product1-price','quantitySellerproduct1','9');return false">Intel i7 4GB 128GB SSD RoseGold</button>   
+            <button class="BTNvariation" type="submit" id="inteli7tree1" value="26,699" onclick="updatePrice('Intel i7 4GB 128GB SSD Silver','inteli7tree1','product1-price','quantitySellerproduct1','9');return false">Intel i7 4GB 128GB SSD Silver</button>          
+           <!--Next i5-->
+           <button class="BTNvariation" type="submit" id="inteli5one" value="26,299" onclick="updatePrice('Intel i5 16GB 512GB SSD RoseGold','inteli5one','product1-price','quantitySellerproduct1','5');return false">Intel i5 16GB 512GB SSD RoseGold</button>
+            <button class="BTNvariation" type="submit" id="inteli5one1" value="25,999" onclick="updatePrice('Intel i5 16GB 512GB SSD Silver','inteli5one1','product1-price','quantitySellerproduct1','10');return false">Intel i5 16GB 512GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="inteli5two" value="25,899" onclick="updatePrice('Intel i5 8GB 256GB SSD RoseGold','inteli5two','product1-price','quantitySellerproduct1','8');return false">Intel i5 8GB 256GB SSD RoseGold</button>
+            <button class="BTNvariation" type="submit" id="inteli5two1" value="25,499" onclick="updatePrice('Intel i5 8GB 256GB SSD Silver','inteli5two1','product1-price','quantitySellerproduct1','7');return false">Intel i5 8GB 256GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="inteli5tree" value="25,299" onclick="updatePrice('Intel i5 4GB 128GB SSD RoseGold','inteli5tree','product1-price','quantitySellerproduct1','11');return false">Intel i5 4GB 128GB SSD RoseGold</button>   
+            <button class="BTNvariation" type="submit" id="inteli5tree1" value="24,999" onclick="updatePrice('Intel i5 4GB 128GB SSD Silver','inteli5tree1','product1-price','quantitySellerproduct1','12');return false">Intel i5 4GB 128GB SSD Silver</button>          
+           <!--Next i3-->
+           <button class="BTNvariation" type="submit" id="inteli3one" value="24,899" onclick="updatePrice('Intel i3 16GB 512GB SSD RoseGold','inteli3one','product1-price','quantitySellerproduct1','10');return false">Intel i3 16GB 512GB SSD RoseGold</button>
+           <button class="BTNvariation" type="submit" id="inteli3one1" value="24,850" onclick="updatePrice('Intel i3 16GB 512GB SSD Silver','inteli3one1','product1-price','quantitySellerproduct1','9');return false">Intel i3 16GB 512GB SSD Silver</button>
+           <button class="BTNvariation" type="submit" id="inteli3two" value="24,399" onclick="updatePrice('Intel i3 8GB 256GB SSD RoseGold','inteli3two','product1-price','quantitySellerproduct1','8');return false">Intel i3 8GB 256GB SSD RoseGold</button>
+           <button class="BTNvariation" type="submit" id="inteli3two1" value="23,999" onclick="updatePrice('Intel i3 8GB 256GB SSD Silver','inteli3two1','product1-price','quantitySellerproduct1','7');return false">Intel i3 8GB 256GB SSD Silver</button>
+           <button class="BTNvariation" type="submit" id="inteli3tree" value="23,899" onclick="updatePrice('Intel i3 4GB 128GB SSD RoseGold','inteli3tree','product1-price','quantitySellerproduct1','11');return false">Intel i3 4GB 128GB SSD RoseGold</button>   
+           <button class="BTNvariation" type="submit" id="inteli3tree1" value="23,599" onclick="updatePrice('Intel i3 4GB 128GB SSD Silver','inteli3tree1','product1-price','quantitySellerproduct1','12');return false">Intel i3 4GB 128GB SSD Silver</button>          
+        
+           <br>
+        <p id="product1-price">₱23,599.00 - ₱28,299.00 </p>
+        <label for="quantity" class="quantitySeller2" >Quantity:
+            <br>
+            <input type="number" value="1" class="quantity-input" id="product1">
+    </label>
+        <p class="quantitySeller" id="quantitySellerproduct1" ></p>
+    
+        <button class="Buy-btn" onclick="buyNow2('product1','product1-price','quantitySellerproduct1','product1-name');return false" >BUY NOW</button>
+  
+    </form>
+    </div>
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\laptopProducts\product2.jpg" alt="Product 2">
+        <h3 id="product2-name">MSI Cyborg 15 A12UDX-496PH Gaming Laptop (i5-12450H / RTX 3050 6GB / 8GB RAM / 512GB SSD /15.6" FHD)</h3>
+    <form>
+        <label for="variation">Variation: <br></label>
+        <button class="BTNvariation" type="submit" id="product2inteli7one" value="59,999" onclick="updatePrice('Intel i7 16GB 512GB SSD Black','product2inteli7one','product2-price','quantitySellerproduct2','12');return false">Intel i7 16GB 512GB SSD Black</button>
+        <button class="BTNvariation" type="submit" id="product2inteli7one1" value="59,899" onclick="updatePrice('Intel i7 16GB 512GB SSD Silver','product2inteli7one1','product2-price','quantitySellerproduct2','14');return false">Intel i7 16GB 512GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product2inteli7two" value="58,999" onclick="updatePrice('Intel i7 8GB 256GB SSD Black','product2inteli7two','product2-price','quantitySellerproduct2','9');return false">Intel i7 8GB 256GB SSD Black</button>
+        <button class="BTNvariation" type="submit" id="product2inteli7two1" value="58,899" onclick="updatePrice('Intel i7 8GB 256GB SSD Silver','product2inteli7two1','product2-price','quantitySellerproduct2','5');return false">Intel i7 8GB 256GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product2inteli7tree" value="57,999" onclick="updatePrice('Intel i7 4GB 128GB SSD Black','product2inteli7tree','product2-price','quantitySellerproduct2','9');return false">Intel i7 4GB 128GB SSD Black</button>   
+        <button class="BTNvariation" type="submit" id="product2inteli7tree1" value="56,899" onclick="updatePrice('Intel i7 4GB 128GB SSD Silver','product2inteli7tree1','product2-price','quantitySellerproduct2','10');return false">Intel i7 4GB 128GB SSD Silver</button>          
+       <!--Next i5-->
+       <button class="BTNvariation" type="submit" id="product2inteli5one" value="55,999" onclick="updatePrice('Intel i5 16GB 512GB SSD Black','product2inteli5one','product2-price','quantitySellerproduct2','12');return false">Intel i5 16GB 512GB SSD Black</button>
+        <button class="BTNvariation" type="submit" id="product2inteli5one1" value="55,899" onclick="updatePrice('Intel i5 16GB 512GB SSD Silver','product2inteli5one1','product2-price','quantitySellerproduct2','10');return false">Intel i5 16GB 512GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product2inteli5two" value="54,999" onclick="updatePrice('Intel i5 8GB 256GB SSD Black','product2inteli5two','product2-price','quantitySellerproduct2','8');return false">Intel i5 8GB 256GB SSD Black</button>
+        <button class="BTNvariation" type="submit" id="product2inteli5two1" value="53,899" onclick="updatePrice('Intel i5 8GB 256GB SSD Silver','product2inteli5two1','product2-price','quantitySellerproduct2','7');return false">Intel i5 8GB 256GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product2inteli5tree" value="52,999" onclick="updatePrice('Intel i5 4GB 128GB SSD Black','product2inteli5tree','product2-price','quantitySellerproduct2','11');return false">Intel i5 4GB 128GB SSD Black</button>   
+        <button class="BTNvariation" type="submit" id="product2inteli5tree1" value="51,899" onclick="updatePrice('Intel i5 4GB 128GB SSD Silver','product2inteli5tree1','product2-price','quantitySellerproduct2','12');return false">Intel i5 4GB 128GB SSD Silver</button>          
+       <!--Next i3-->
+       <button class="BTNvariation" type="submit" id="product2inteli3one" value="50,999" onclick="updatePrice('Intel i3 16GB 512GB SSD Black','product2inteli3one','product2-price','quantitySellerproduct2','10');return false">Intel i3 16GB 512GB SSD Black</button>
+       <button class="BTNvariation" type="submit" id="product2inteli3one1" value="50,899" onclick="updatePrice('Intel i3 16GB 512GB SSD Silver','product2inteli3one1','product2-price','quantitySellerproduct2','9');return false">Intel i3 16GB 512GB SSD Silver</button>
+       <button class="BTNvariation" type="submit" id="product2inteli3two" value="49,999" onclick="updatePrice('Intel i3 8GB 256GB SSD Black','product2inteli3two','product2-price','quantitySellerproduct2','8');return false">Intel i3 8GB 256GB SSD Black</button>
+       <button class="BTNvariation" type="submit" id="product2inteli3two1" value="49,899" onclick="updatePrice('Intel i3 8GB 256GB SSD Silver','product2inteli3two1','product2-price','quantitySellerproduct2','7');return false">Intel i3 8GB 256GB SSD Silver</button>
+       <button class="BTNvariation" type="submit" id="product2inteli3tree" value="48,999" onclick="updatePrice('Intel i3 4GB 128GB SSD Black','product2inteli3tree','product2-price','quantitySellerproduct2','13');return false">Intel i3 4GB 128GB SSD Black</button>   
+       <button class="BTNvariation" type="submit" id="product2inteli3tree1" value="47,899" onclick="updatePrice('Intel i3 4GB 128GB SSD Silver','product2inteli3tree1','product2-price','quantitySellerproduct2','14');return false">Intel i3 4GB 128GB SSD Silver</button>          
+    
+       <br>
+    <p id="product2-price">₱47,899.00 - ₱59,999.00 </p>
+    <label for="quantity" class="quantitySeller2" >Quantity:
+        <br>
+        <input type="number" value="1" class="quantity-input" id="product2">
+</label>
+    <p class="quantitySeller" id="quantitySellerproduct2" ></p>
+
+    <button class="Buy-btn" onclick="buyNow2('product2','product2-price','quantitySellerproduct2','product2-name');return false" >BUY NOW</button>
+
+</form>
+    </div>
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\laptopProducts\product4.jpg" alt="Product 2">
+        <h3 id="product3-name">HP ELITEbook 430 ultraslim laptop intel core i5 500GB-8GB- fingerprint backlit- with original charge</h3>
+        <form>
+            <label for="variation">Variation: <br></label>
+        <button class="BTNvariation" type="submit" id="product3inteli7one" value="27,999" onclick="updatePrice('Intel i7 16GB 512GB SSD Gold','product3inteli7one','product3-price','quantitySellerproduct3','16');return false">Intel i7 16GB 512GB SSD Gold</button>
+        <button class="BTNvariation" type="submit" id="product3inteli7one1" value="27,899" onclick="updatePrice('Intel i7 16GB 512GB SSD Silver','product3inteli7one1','product3-price','quantitySellerproduct3','15');return false">Intel i7 16GB 512GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product3inteli7two" value="27,799" onclick="updatePrice('Intel i7 8GB 256GB SSD Gold','product3inteli7two','product3-price','quantitySellerproduct3','10');return false">Intel i7 8GB 256GB SSD Gold</button>
+        <button class="BTNvariation" type="submit" id="product3inteli7two1" value="27,699" onclick="updatePrice('Intel i7 8GB 256GB SSD Silver','product3inteli7two1','product3-price','quantitySellerproduct3','9');return false">Intel i7 8GB 256GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product3inteli7tree" value="27,599" onclick="updatePrice('Intel i7 4GB 128GB SSD Gold','product3inteli7tree','product3-price','quantitySellerproduct3','8');return false">Intel i7 4GB 128GB SSD Gold</button>   
+        <button class="BTNvariation" type="submit" id="product3inteli7tree1" value="27,399" onclick="updatePrice('Intel i7 4GB 128GB SSD Silver','product3inteli7tree1','product3-price','quantitySellerproduct3','10');return false">Intel i7 4GB 128GB SSD Silver</button>          
+       <!--Next i5-->
+       <button class="BTNvariation" type="submit" id="product3inteli5one" value="26,999" onclick="updatePrice('Intel i5 16GB 512GB SSD Gold','product3inteli5one','product3-price','quantitySellerproduct3','20');return false">Intel i5 16GB 512GB SSD Gold</button>
+        <button class="BTNvariation" type="submit" id="product3inteli5one1" value="26,899" onclick="updatePrice('Intel i5 16GB 512GB SSD Silver','product3inteli5one1','product3-price','quantitySellerproduct3','18');return false">Intel i5 16GB 512GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product3inteli5two" value="26,799" onclick="updatePrice('Intel i5 8GB 256GB SSD Gold','product3inteli5two','product3-price','quantitySellerproduct3','18');return false">Intel i5 8GB 256GB SSD Gold</button>
+        <button class="BTNvariation" type="submit" id="product3inteli5two1" value="26,699" onclick="updatePrice('Intel i5 8GB 256GB SSD Silver','product3inteli5two1','product3-price','quantitySellerproduct3','17');return false">Intel i5 8GB 256GB SSD Silver</button>
+        <button class="BTNvariation" type="submit" id="product3inteli5tree" value="26,599" onclick="updatePrice('Intel i5 4GB 128GB SSD Gold','product3inteli5tree','product3-price','quantitySellerproduct3','11');return false">Intel i5 4GB 128GB SSD Gold</button>   
+        <button class="BTNvariation" type="submit" id="product3inteli5tree1" value="26,399" onclick="updatePrice('Intel i5 4GB 128GB SSD Silver','product3inteli5tree1','product3-price','quantitySellerproduct3','12');return false">Intel i5 4GB 128GB SSD Silver</button>          
+       <!--Next i3-->
+       <button class="BTNvariation" type="submit" id="product3inteli3one" value="25,999" onclick="updatePrice('Intel i3 16GB 512GB SSD Gold','product3inteli3one','product3-price','quantitySellerproduct3','10');return false">Intel i3 16GB 512GB SSD Gold</button>
+       <button class="BTNvariation" type="submit" id="product3inteli3one1" value="25,899" onclick="updatePrice('Intel i3 16GB 512GB SSD Silver','product3inteli3one1','product3-price','quantitySellerproduct3','9');return false">Intel i3 16GB 512GB SSD Silver</button>
+       <button class="BTNvariation" type="submit" id="product3inteli3two" value="25,799" onclick="updatePrice('Intel i3 8GB 256GB SSD Gold','product3inteli3two','product3-price','quantitySellerproduct3','8');return false">Intel i3 8GB 256GB SSD Gold</button>
+       <button class="BTNvariation" type="submit" id="product3inteli3two1" value="25,699" onclick="updatePrice('Intel i3 8GB 256GB SSD Silver','product3inteli3two1','product3-price','quantitySellerproduct3','7');return false">Intel i3 8GB 256GB SSD Silver</button>
+       <button class="BTNvariation" type="submit" id="product3inteli3tree" value="25,599" onclick="updatePrice('Intel i3 4GB 128GB SSD Gold','product3inteli3tree','product3-price','quantitySellerproduct3','13');return false">Intel i3 4GB 128GB SSD Gold</button>   
+       <button class="BTNvariation" type="submit" id="product3inteli3tree1" value="25,399" onclick="updatePrice('Intel i3 4GB 128GB SSD Silver','product3inteli3tree1','product3-price','quantitySellerproduct3','14');return false">Intel i3 4GB 128GB SSD Silver</button>          
+    
+       <br>
+    <p id="product3-price"> ₱25,399.00 - ₱27,999.00 </p>
+    <label for="quantity" class="quantitySeller2" >Quantity:
+        <br>
+        <input type="number" value="1" class="quantity-input" id="product3">
+</label>
+    <p class="quantitySeller" id="quantitySellerproduct3" ></p>
+
+    <button class="Buy-btn" onclick="buyNow2('product3','product3-price','quantitySellerproduct3','product3-name');return false" >BUY NOW</button>
+
+</form>
+    </div>
+    <div class="product-box">
+        <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\laptopProducts\product5.jpg" alt="Product 4">
+        <h3 id="product4-name">Acer Predator Helios Neo 16 2023 i5/i7 RTX4050/RTX4060 16" 16GB DDR5 512GB SSD ZZM Trading</h3>
+        <form>
+            <label for="variation">Variation: <br></label>
+            <button class="BTNvariation" type="submit" id="product4inteli9one" value="68,999" onclick="updatePrice('Intel i9 16GB 512GB SSD Black','product4inteli9one','product4-price','quantitySellerproduct4','8');return false">Intel i9 16GB 512GB SSD Black</button>
+            <button class="BTNvariation" type="submit" id="product4inteli9one1" value="68,899" onclick="updatePrice('Intel i9 16GB 512GB SSD Silver','product4inteli9one1','product4-price','quantitySellerproduct4','9');return false">Intel i9 16GB 512GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="product4inteli9two" value="68,799" onclick="updatePrice('Intel i9 8GB 256GB SSD Black','product4inteli9two','product4-price','quantitySellerproduct4','8');return false">Intel i9 8GB 256GB SSD Black</button>
+            <button class="BTNvariation" type="submit" id="product4inteli9two1" value="68,699" onclick="updatePrice('Intel i9 8GB 256GB SSD Silver','product4inteli9two1','product4-price','quantitySellerproduct4','7');return false">Intel i9 8GB 256GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="product4inteli9tree" value="68,599" onclick="updatePrice('Intel i9 4GB 128GB SSD Black','product4inteli9tree','product4-price','quantitySellerproduct4','10');return false">Intel i9 4GB 128GB SSD Black</button>   
+            <button class="BTNvariation" type="submit" id="product4inteli9tree1" value="68,299" onclick="updatePrice('Intel i9 4GB 128GB SSD Silver','product4inteli9tree1','product4-price','quantitySellerproduct4','11');return false">Intel i9 4GB 128GB SSD Silver</button>          
+           <!--Next i5-->      
+             <p id="laptopCenter"></p>
+            <button class="BTNvariation" type="submit" id="product4inteli7one" value="67,999" onclick="updatePrice('Intel i7 16GB 512GB SSD Black','product4inteli7one','product4-price','quantitySellerproduct4','12');return false">Intel i7 16GB 512GB SSD Black</button>
+            <button class="BTNvariation" type="submit" id="product4inteli7one1" value="67,899" onclick="updatePrice('Intel i7 16GB 512GB SSD Silver','product4inteli7one1','product4-price','quantitySellerproduct4','14');return false">Intel i7 16GB 512GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="product4inteli7two" value="67,799" onclick="updatePrice('Intel i7 8GB 256GB SSD Black','product4inteli7two','product4-price','quantitySellerproduct4','9');return false">Intel i7 8GB 256GB SSD Black</button>
+            <button class="BTNvariation" type="submit" id="product4inteli7two1" value="67,699" onclick="updatePrice('Intel i7 8GB 256GB SSD Silver','product4inteli7two1','product4-price','quantitySellerproduct4','5');return false">Intel i7 8GB 256GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="product4inteli7tree" value="67,599" onclick="updatePrice('Intel i7 4GB 128GB SSD Black','product4inteli7tree','product4-price','quantitySellerproduct4','9');return false">Intel i7 4GB 128GB SSD Black</button>   
+            <button class="BTNvariation" type="submit" id="product4inteli7tree1" value="67,299" onclick="updatePrice('Intel i7 4GB 128GB SSD Silver','product4inteli7tree1','product4-price','quantitySellerproduct4','10');return false">Intel i7 4GB 128GB SSD Silver</button>          
+             <!--Next i3-->
+            <button class="BTNvariation" type="submit" id="product4inteli5one" value="65,999" onclick="updatePrice('Intel i5 16GB 512GB SSD Black','product4inteli5one','product4-price','quantitySellerproduct4','12');return false">Intel i5 16GB 512GB SSD Black</button>
+            <button class="BTNvariation" type="submit" id="product4inteli5one1" value="65,899" onclick="updatePrice('Intel i5 16GB 512GB SSD Silver','product4inteli5one1','product4-price','quantitySellerproduct4','10');return false">Intel i5 16GB 512GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="product4inteli5two" value="65,799" onclick="updatePrice('Intel i5 8GB 256GB SSD Black','product4inteli5two','product4-price','quantitySellerproduct4','8');return false">Intel i5 8GB 256GB SSD Black</button>
+            <button class="BTNvariation" type="submit" id="product4inteli5two1" value="65,599" onclick="updatePrice('Intel i5 8GB 256GB SSD Silver','product4inteli5two1','product4-price','quantitySellerproduct4','7');return false">Intel i5 8GB 256GB SSD Silver</button>
+            <button class="BTNvariation" type="submit" id="product4inteli5tree" value="65,499" onclick="updatePrice('Intel i5 4GB 128GB SSD Black','product4inteli5tree','product4-price','quantitySellerproduct4','11');return false">Intel i5 4GB 128GB SSD Black</button>   
+            <button class="BTNvariation" type="submit" id="product4inteli5tree1" value="64,999" onclick="updatePrice('Intel i5 4GB 128GB SSD Silver','product4inteli5tree1','product4-price','quantitySellerproduct4','21');return false">Intel i5 4GB 128GB SSD Silver</button>          
+
+         
+           <br>
+        <p id="product4-price">₱64,999.00 - ₱68,999.00 </p>
+        <label for="quantity" class="quantitySeller2" >Quantity:
+            <br>
+            <input type="number" value="1" class="quantity-input" id="product4">
+    </label>
+        <p class="quantitySeller" id="quantitySellerproduct4" ></p>
+    
+        <button class="Buy-btn" onclick="buyNow2('product4','product4-price','quantitySellerproduct4','product4-name');return false" >BUY NOW</button>
+    
+    </form>
+    </div>
+    
+</div>
+<div id = "menu">
+    <a href="#laptopBack">Go to Top</a>
+ </div>
+        <center>
+            <p>BUY NOW !!</p>
+        </center>
+    <footer>  
+        <br>
+        <br>
+            <p>©2023 CafeTech</p>
+                    
+    </footer>
+            </div>    
+        </div>
+  </body>      
+  <script>
+  
+    var selectedVariation = "";
+    function updatePrice(variation,buttonid,productprice,quantityseller,quantiNo) {
+        selectedVariation = variation; 
+        var variationSelect = document.getElementById(buttonid).value;
+        priceParagraph = document.getElementById(productprice);
+        var quantityParagraph = document.getElementById(quantityseller);
+       
+    
+        var quantity = quantiNo;
+    
+    priceParagraph.innerHTML = "₱" + variationSelect + ".00";
+    quantityParagraph.innerHTML = quantity + " pieces available";
+    }
+
+    
+  </script>       
+</html>
+               

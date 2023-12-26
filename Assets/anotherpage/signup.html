@@ -1,0 +1,128 @@
+<!--@authors : MARK CLEO CALBANG
+               JOHN RICHARD MEPIEZA
+               CLARENCE SIMORAN 
+               KARL NOYNAY-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CafeTech-SignUp</title>
+    <link rel="stylesheet" href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\style.css">
+    <style>
+        #signup-form {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 30px;
+            background-color: rgba(123, 124, 122, 0.5);
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(247, 242, 242, 1);
+            border-radius: 10px;
+        }
+
+        #signup-form h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        #signup-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        #signup-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #signup-form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .loginlink a {
+            color: #fffdfd;
+            text-decoration: none;
+        }
+
+        .loginlink a:hover {
+            color: #b1b1b1;
+        }
+    </style>
+<script src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\path\to\script.js"></script>
+</head>
+<body>
+<div class="background">
+    <video id="video-background" autoplay loop muted>
+        <source src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <div id="linebymiddle">
+            <img src="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\Assets\CafeTechLogo.png"
+                 alt="CafetechLogo" width="50px" height="50px">
+            </div>
+        </div>
+        <div class="home">
+        </div>
+        <br>
+        <br>
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <br>
+            <form>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname"  required>
+
+                <label for="family_name">Last Name:</label>
+                <input type="text" id="family_name"  required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username"  required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password"  required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"  required>
+
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday"  required>
+
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                 <br>
+                 <br>
+                <button type="submit" onclick="signup();">Sign Up</button>
+
+                <div class="loginlink">
+                    <br>
+                    <a href="C:\Users\BARANGAY LUY-A\OneDrive\Desktop\Project\CafeTechE.A\home.html">Already have an account? Login here</a>
+                    <br>
+                </div>
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <p>©2023 CafeTech</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
